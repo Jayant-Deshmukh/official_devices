@@ -39,7 +39,7 @@ else
 
   if [ ! -d ~/official_devices ]; then
     cd ~
-    git clone https://github.com/SuperiorOS-Devices/official_devices.git -b eleven
+    git clone https://github.com/Jayant-Deshmukh/official_devices.git -b eleven
   fi
 
   if [ -d ~/official_devices ]; then
