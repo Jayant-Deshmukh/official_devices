@@ -75,7 +75,7 @@ else
       $(sed -i "s|$version_old|$version|g" ~/official_devices/builds/$device/build.json)
 
       # url
-      url="https://master.dl.sourceforge.net/project/superioros/$device/$zip_name"
+      url="https://master.dl.sourceforge.net/project/jd-builds/$device/$zip_name"
       url_old=$(cat ~/official_devices/builds/$device/build.json | grep https | cut -d '"' -f4)
       $(sed -i "s|$url_old|$url|g" ~/official_devices/builds/$device/build.json)
 
@@ -112,7 +112,7 @@ else
       $(sed -i "s|$version_old|$version|g" ~/official_devices/builds/$device/gapps_build.json)
 
       # url
-      url="https://master.dl.sourceforge.net/project/superioros/$device/$zip_name"
+      url="https://master.dl.sourceforge.net/project/jd-builds/$device/$zip_name"
       url_old=$(cat ~/official_devices/builds/$device/gapps_build.json | grep https | cut -d '"' -f4)
       $(sed -i "s|$url_old|$url|g" ~/official_devices/builds/$device/gapps_build.json)
     fi
